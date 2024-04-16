@@ -1,0 +1,47 @@
+<div fxLayout="row" fxLayoutAlign="center center" fxFlexFill>
+  <mat-card fxFlex="40">
+    <mat-toolbar>Sign Up</mat-toolbar>
+
+    <form
+      class="form"
+      fxLayout="column"
+      fxLayoutGap="10px"
+      (ngSubmit)="signUp()"
+      [formGroup]="signUpForm"
+      fxLayoutAlign="stretch"
+    >
+      <mat-form-field>
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="firstName">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastName">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Confirm Password</mat-label>
+        <input matInput type="password" formControlName="confirmPassword">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="signUpForm.invalid">Sign Up</button>
+
+      <div class="links" fxLayoutGap="10">
+        <span>Already have an account? </span>
+
+        <a (click)="goToLogin()">Login</a>
+      </div>
+    </form>
+  </mat-card>
+</div>

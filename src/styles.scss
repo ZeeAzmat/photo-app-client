@@ -1,1 +1,86 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+form {
+  margin: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+// mat-form-field {
+//   width: 100%;
+//   margin-bottom: 20px;
+//   background: white;
+// }
+
+// button[type="submit"] {
+//   width: 100%;
+//   font-size: 18px;
+// }
+
+// button[disabled] {
+//   opacity: 0.6; /* Reduce opacity to visually indicate button is disabled */
+//   cursor: not-allowed; /* Change cursor to indicate button is not clickable */
+//   background-color: inherit; /* Maintain the button's original background color */
+//   color: inherit; /* Maintain the button's original text color */
+//   border: 1px solid #ccc; /* Add a border to visually distinguish disabled button */
+//   /* Add additional styles for disabled buttons */
+// }
+
+// a {
+//   color: #2196f3;
+//   text-decoration: none;
+//   &:hover {
+//     text-decoration: underline;
+//     cursor: pointer;
+//     font-weight: bold;
+//   }
+// }
+
+// .container {
+//   display: block;
+//   // display: flex;
+//   // flex-direction: column;
+//   // align-items: center;
+//   // justify-content: center;
+//   // height: 100vh;
+// }
+
+// .mt-20 {
+//   margin-top: 20px;
+// }
+
+// .mx-8 {
+//   margin-left: 8px;
+//   margin-right: 8px;
+// }
+
+// h1 {
+//   font-size: 30px !important;
+//   font-weight: 500;
+// }
+
+// .text-center {
+//   text-align: center;
+// }
+
+.links {
+  font-size: 18px;
+
+  span {
+    color: #bbb;
+  }
+
+  a {
+    color: whitesmoke;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<mat-toolbar>
+  <span>10KC Photo App</span>
+  isLoggedIn: {{ isLoggedIn }}
+  <span class="example-spacer"></span>
+
+  <button
+    mat-icon-button
+    (click)="goToAddImage()"
+    class="example-icon favorite-icon"
+    aria-label="icon-button with heart icon"
+  >
+    <mat-icon>add</mat-icon>
+  </button>
+
+
+  <button
+    mat-icon-button
+    (click)="logout()"
+    *ngIf="isLoggedIn"
+    class="example-icon favorite-icon"
+    aria-label="icon-button with heart icon"
+  >
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar>
